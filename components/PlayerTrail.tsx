@@ -8,7 +8,7 @@ interface PlayerTrailProps {
   trailLength: number;
 }
 
-const PlayerTrail: React.FC<PlayerTrailProps> = ({ pos, index, trailLength }) => {
+const PlayerTrail: React.FC<PlayerTrailProps> = ({ pos }) => {
   // Constant opacity for a "stamp" effect.
   const opacity = 0.4;
 
