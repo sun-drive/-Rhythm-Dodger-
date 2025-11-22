@@ -1,0 +1,15 @@
+{
+  "name": "리듬 회피 (Rhythm Dodger)",
+  "short_name": "RhythmDodger",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#06b6d4",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2991/2991112.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

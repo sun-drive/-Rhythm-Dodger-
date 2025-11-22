@@ -1,0 +1,5 @@
+{
+  "name": "(배포)리듬 회피 (Rhythm Dodger)",
+  "description": "A rhythm-based avoidance game where the player uses WASD keys to move and dodge falling blocks. The goal is to survive as long as possible to achieve a high score.",
+  "requestFramePermissions": []
+}

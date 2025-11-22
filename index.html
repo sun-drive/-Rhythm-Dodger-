@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리듬 회피 (Rhythm Dodger)</title>
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        overscroll-behavior: none;
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0.3;
+        }
+      }
+      .blinking {
+        animation: blinker 0.2s linear infinite;
+      }
+      @keyframes reef-warning-pulse {
+        0%, 100% {
+          background-color: rgba(239, 68, 68, 0.4);
+          transform: scale(1);
+        }
+        50% {
+          background-color: rgba(239, 68, 68, 0.7);
+          transform: scale(1.05);
+        }
+      }
+      .reef-warning {
+        animation: reef-warning-pulse 0.5s infinite;
+      }
+      @keyframes fade-out-slow {
+        0% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+      .reef-fade {
+        animation: fade-out-slow 6s linear forwards;
+      }
+      @keyframes wave-motion-1 {
+        0%, 100% { transform: translateY(0) translateX(0) scaleX(1); }
+        50% { transform: translateY(-5px) translateX(4px) scaleX(1.02); }
+      }
+      @keyframes wave-motion-2 {
+        0%, 100% { transform: translateY(0) translateX(0) scaleX(1); }
+        50% { transform: translateY(-8px) translateX(-4px) scaleX(1.01); }
+      }
+      @keyframes wave-motion-3 {
+        0%, 100% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(-4px) translateX(0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-900 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
